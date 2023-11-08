@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+  }
+
+  .container{
+    width: 70%;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.3), 0 4px 4px rgba(0,0,0,0.2);
+    margin: auto;
+    margin-top: 2vw;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  .container h1,h2,h3{
+    font-size: 2vw;
+    padding: 2vw;
+  }
+
+  .container p,li{
+    padding: 0vw 2vw 2vw 2vw;
+    color: #1a1a1a;
+    font-size: 1vw;
+    width: 90%;
+  }
+
+
+  #header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  
+  #navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  #navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  #navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+  }
+  
+  #navbar li a:hover,#navbar li a.active{
+    color: royalblue;
+  }
+  
+  #navbar li a.active::after,#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: royalblue;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
